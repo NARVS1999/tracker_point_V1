@@ -1,9 +1,12 @@
 JUST REMEMBER THIS CODE
 
 UPDATE THE FRONTEND
+[[navigation1][navigation2]]
 ...
-[CHECKBOX1][BUTTON1][BUTTON2][BUTTON3]
-[CHECKBOX2][BUTTON4][BUTTON5][BUTTON6]
+
+ADDED FEATURES 
+- navigation1 go to index.html
+- navigation2 go to second.html
 
 
 ADDED FEATURES
