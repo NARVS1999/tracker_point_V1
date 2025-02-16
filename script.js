@@ -37,3 +37,74 @@ function updateDisplay() {
     displayElement.textContent = displayValuePoint;
     localStorage.setItem('displayValuePoint', displayValuePoint); // Store the value in local storage
 }
+
+const checkbox1 = document.getElementById("checkbox1");
+const checkbox2 = document.getElementById("checkbox2");
+
+// Disable buttons based on checkbox states
+function toggleButtons() {
+    // Checkbox 1 disables Group 1 buttons
+    if (checkbox1.checked) {
+        button1.disabled = true;
+        button1.classList.add('bg-gray-500', 'cursor-not-allowed');
+        button1.classList.remove('bg-blue-500');
+
+        button2.disabled = true;
+        button2.classList.add('bg-gray-500', 'cursor-not-allowed');
+        button2.classList.remove('bg-blue-500');
+
+        button3.disabled = true;
+        button3.classList.add('bg-gray-500', 'cursor-not-allowed');
+        button3.classList.remove('bg-blue-500');
+
+    } else {
+        button1.disabled = false;
+        button1.classList.remove('bg-gray-500', 'cursor-not-allowed');
+        button1.classList.add('bg-blue-500');
+
+        button2.disabled = false;
+        button2.classList.remove('bg-gray-500', 'cursor-not-allowed');
+        button2.classList.add('bg-blue-500');
+
+        button3.disabled = false;
+        button3.classList.remove('bg-gray-500', 'cursor-not-allowed');
+        button3.classList.add('bg-blue-500');
+    }
+
+
+    // Checkbox 2 disables Group 2 buttons
+    if (checkbox2.checked) {
+        button4.disabled = true;
+        button4.classList.add('bg-gray-500', 'cursor-not-allowed');
+        button4.classList.remove('bg-red-500');
+
+        button5.disabled = true;
+        button5.classList.add('bg-gray-500', 'cursor-not-allowed');
+        button5.classList.remove('bg-red-500');
+
+        button6.disabled = true;
+        button6.classList.add('bg-gray-500', 'cursor-not-allowed');
+        button6.classList.remove('bg-red-500');
+    } else {
+        button4.disabled = false;
+        button4.classList.remove('bg-gray-500', 'cursor-not-allowed');
+        button4.classList.add('bg-red-500');
+
+        button5.disabled = false;
+        button5.classList.remove('bg-gray-500', 'cursor-not-allowed');
+        button5.classList.add('bg-red-500');
+
+        button6.disabled = false;
+        button6.classList.remove('bg-gray-500', 'cursor-not-allowed');
+        button6.classList.add('bg-red-500');
+
+    }
+
+}
+
+// Listen for checkbox changes
+checkbox1.addEventListener("change", toggleButtons);
+checkbox2.addEventListener("change", toggleButtons);
+
+// Initial button states
+toggleButtons();
