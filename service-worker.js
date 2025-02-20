@@ -10,6 +10,11 @@ const filesToCache = [
     'second.html',
     'script.js',
     'entertainment.js',
+    '/',
+    '/index.html',
+    '/second.html',
+    '/script.js',
+    '/entertainment.js',
 ];
 
 // Install event: Cache assets
