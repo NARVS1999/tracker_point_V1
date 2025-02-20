@@ -109,9 +109,11 @@ checkbox2.addEventListener("change", toggleButtons);
 // Initial button states
 toggleButtons();
 
+
+// github setup offline
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('/tracker_point_V1/service-worker.js')
             .then((registration) => {
                 console.log('Service Worker registered with scope:', registration.scope);
             })
@@ -120,5 +122,18 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+
+// localtesting offline// localtesting
+// if ('serviceWorker' in navigator) {
+//     window.addEventListener('load', () => {
+//         navigator.serviceWorker.register('/service-worker.js')
+//             .then((registration) => {
+//                 console.log('Service Worker registered with scope:', registration.scope);
+//             })
+//             .catch((error) => {
+//                 console.log('Service Worker registration failed:', error);
+//             });
+//     });
+// }
 
 
