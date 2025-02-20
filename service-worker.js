@@ -7,6 +7,7 @@ const CACHE_NAME = 'my-app-cache-v1';
 const filesToCache = [
     '',
     'index.html',
+    'first.html',
     'second.html',
     'script.js',
     'entertainment.js',
