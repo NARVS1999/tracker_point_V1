@@ -1,5 +1,5 @@
 {
-    "name": "Offline App",
+    "name": "Solo Leveling Tracker",
     "short_name": "Solo Leveling Tracker",
     "description": "A simple app that works offline",
     "start_url": "/tracker_point_V1/",
