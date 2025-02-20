@@ -2,7 +2,7 @@
     "name": "Solo Leveling Tracker",
     "short_name": "Solo Leveling Tracker",
     "description": "A simple app that works offline",
-    "start_url": "/index.html",
+    "start_url": "./",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
