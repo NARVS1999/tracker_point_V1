@@ -9,13 +9,7 @@ const filesToCache = [
     'index.html',
     'second.html',
     'script.js',
-    'entertainment.js', 
-    // for github setup
-    'tracker_point_V1/',
-    'tracker_point_V1/index.html',
-    'tracker_point_V1/second.html',
-    'tracker_point_V1/script.js',
-    'tracker_point_V1/entertainment.js',
+    'entertainment.js',
 ];
 
 // Install event: Cache assets
