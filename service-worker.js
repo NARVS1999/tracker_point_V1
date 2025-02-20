@@ -5,11 +5,11 @@ const CACHE_NAME = 'my-app-cache-v1';
 
 // Files to cache
 const filesToCache = [
-    '/',
-    '/index.html',
-    '/second.html',
-    '/script.js',
-    '/entertainment.js', 
+    '',
+    'index.html',
+    'second.html',
+    'script.js',
+    'entertainment.js', 
     // for github setup
     'tracker_point_V1/',
     'tracker_point_V1/index.html',
