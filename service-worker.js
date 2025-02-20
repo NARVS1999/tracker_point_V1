@@ -8,10 +8,14 @@ const filesToCache = [
     '/',
     '/index.html',
     '/second.html',
-    '/styles.css',   // Adjust path if necessary
     '/script.js',
-    '/entertainment.js',    // Adjust path if necessary
-    // Add any other files you need to cache here
+    '/entertainment.js', 
+    // for github setup
+    '/tracker_point_V1/',
+    '/tracker_point_V1/index.html',
+    '/tracker_point_V1/second.html',
+    '/tracker_point_V1/script.js',
+    '/tracker_point_V1/entertainment.js',
 ];
 
 // Install event: Cache assets
