@@ -9,10 +9,9 @@
 </head>
 
 <body class="flex items-center justify-center h-screen bg-indigo-300 mx-4">
-
     <div class="text-center">
         <!-- Navigation Buttons -->
-        <div class="mb-20">
+        <div class="mb-8">
             <div class="grid grid-cols-2 gap-4">
                 <a href="first.html" class="bg-indigo-500 text-white px-4 py-2 rounded text-center border-2">G
                     POINTS</a>
@@ -20,8 +19,24 @@
             </div>
         </div>
 
-        <P class="text-xl text-indigo-700 font-bold  mb-6 ">GOAL POINTS</P>
-        <div id="display1" class="text-4xl text-indigo-700 font-bold mb-20">0</div>
+        <!-- Level Display -->
+        <div class="mb-2">
+            <span class="text-xl text-indigo-700 font-bold">Level </span>
+            <span id="levelDisplay" class="text-2xl text-indigo-800 font-bold">1</span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="w-full bg-gray-200 rounded-full h-4 mb-4 mx-auto max-w-xs">
+            <div id="progressBar" class="bg-indigo-600 h-4 rounded-full" style="width: 0%"></div>
+        </div>
+
+        <!-- Progress Text -->
+        <div class="mb-6 text-sm text-indigo-700">
+            <span id="currentExp">0</span>/<span id="nextLevelExp">100</span> XP
+        </div>
+
+        <P class="text-xl text-indigo-700 font-bold mb-6">GOAL POINTS</P>
+        <div id="display1" class="text-4xl text-indigo-700 font-bold mb-8">0</div>
 
         <!-- Checkbox and buttons for Group 1 -->
         <div class="mb-6">
@@ -36,7 +51,6 @@
         <!-- Checkbox and buttons for Group 2 -->
         <div>
             <div class="grid grid-cols-4 gap-4">
-
                 <input type="checkbox" id="checkbox2" checked class="mx-4">
                 <button id="button4" class="bg-red-500 text-white px-4 py-2 rounded">-5</button>
                 <button id="button5" class="bg-red-500 text-white px-4 py-2 rounded">-10</button>
@@ -47,5 +61,8 @@
 
     <script src="script.js"></script>
 </body>
+
+<!-- <body class="flex items-center justify-center h-screen bg-indigo-300 mx-4">
+</body> -->
 
 </html>
